@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication1.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window3" Height="400" Width="550" DataContext="{Binding}" SizeToContent="Manual" ResizeMode="CanResize" WindowStyle="SingleBorderWindow" WindowStartupLocation="Manual">
+    <Grid>
+        <Polygon Name="n1" Stroke="#00000000" StrokeThickness="1" Canvas.Left="10" Canvas.Top="175" FillRule="EvenOdd" Points="200,100,100,300,300, 300" StrokeLineJoin="Round" Margin="0,-12,0,12" ClipToBounds="False" Fill="Red" Focusable="False" />
+        <Slider Height="252" HorizontalAlignment="Left" Margin="390,52,0,0" Name="slider1" VerticalAlignment="Top" Width="18" Orientation="Vertical" SelectionEnd="255" ValueChanged="slider1_ValueChanged" Value="255" Maximum="255" Interval="1" />
+        <Slider Height="252" HorizontalAlignment="Left" Margin="434,52,0,0" Name="slider2" Orientation="Vertical" VerticalAlignment="Top" Width="18" SelectionEnd="255" ValueChanged="slider2_ValueChanged" Maximum="255" Interval="1" />
+        <Slider Height="252" HorizontalAlignment="Left" Margin="476,52,0,0" Name="slider3" Orientation="Vertical" VerticalAlignment="Top" Width="18" SelectionEnd="255" ValueChanged="slider3_ValueChanged" Maximum="255" Interval="1" />
+        <Label Content="R" Height="28" HorizontalAlignment="Left" Margin="390,18,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="G" Height="28" HorizontalAlignment="Left" Margin="434,18,0,0" Name="label2" VerticalAlignment="Top" />
+        <Label Content="B" Height="28" HorizontalAlignment="Left" Margin="476,18,0,0" Name="label3" VerticalAlignment="Top" />
+        <Label Content="255" Height="28" HorizontalAlignment="Left" Margin="381,310,0,0" Name="label45" VerticalAlignment="Top" />
+        <Label Content="0" Height="28" HorizontalAlignment="Left" Margin="426,310,0,0" Name="label5" VerticalAlignment="Top" />
+        <Label Content="0" Height="28" HorizontalAlignment="Left" Margin="475,310,0,0" Name="label6" VerticalAlignment="Top" />
+    </Grid>
+</Window>
